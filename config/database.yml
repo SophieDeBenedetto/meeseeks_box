@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  port: 5432
+  username: postgres
+  password: <%= ENV.fetch("POSTGRES_PASSWORD") %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: meeseeks_box_development
+
+test:
+  <<: *default
+  database: meeseeks_box_test
+
+production:
+  <<: *default
+  database: meeseeks_box_production
+  username: meeseeks_box
+  password: <%= ENV['MEESEEKS_BOX_DB_PASSWORD'] %>

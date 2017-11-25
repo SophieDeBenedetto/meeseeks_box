@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20171124212616) do
   create_table "scenes", force: :cascade do |t|
     t.string "season"
     t.string "episode"
+    t.string "title"
     t.string "dialogue"
   end
 

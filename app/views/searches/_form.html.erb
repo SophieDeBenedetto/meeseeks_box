@@ -1,0 +1,11 @@
+
+  <%= form_for @search, remote: true do |f|%>
+    <%= f.label :season %>
+    <%=f.text_field :season%> 
+    <%= f.label :episode %> 
+    <%=f.text_field :episode%>
+    <%= f.label :keyword %>
+    <%=f.text_field :keyword%>
+
+    <%=f.submit "can doooo!", id: 'submit'%>
+  <% end %>

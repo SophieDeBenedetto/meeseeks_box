@@ -7,7 +7,7 @@ class Search
     new(options).for
   end
 
-  def initialize(options=nil)
+  def initialize(options={})
     @season       = options[:season]
     @episode      = options[:episode]
     @keyword      = options[:keyword]        

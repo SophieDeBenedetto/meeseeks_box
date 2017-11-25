@@ -1,0 +1,2 @@
+$("#scene").html("<%= j render partial: "scene", locals: {scene: @scene} %>")
+$('html,body').animate({scrollTop: $("#scene").offset().top},'slow');

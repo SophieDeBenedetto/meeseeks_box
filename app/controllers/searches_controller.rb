@@ -1,4 +1,4 @@
-class SearchController < ApplicationController
+class SearchesController < ApplicationController
   def new
     @search = Search.new
   end
@@ -10,6 +10,6 @@ class SearchController < ApplicationController
   private
 
   def search_params
-    params[:search]
+    params.require(:search).permit(:season, :episode, :keyword)
   end
 end

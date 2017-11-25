@@ -1,0 +1,16 @@
+<% if scene %>
+  <div class="card search-result">
+    <div class="card-body">
+      <h3 id="scene-heading">Season <%= scene.season %> episode <%= scene.episode %></h3>
+      <% dialogue_lines(scene).each_with_index do |line, i| %>
+        <p>
+          <span class="<%= line_class(i) %>">
+            <%= line_speaker(line) %>
+          </span>
+          <%= line_content(line) %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+  <button type="button" class="btn btn-block new-search">New Search</button>
+<% end %>

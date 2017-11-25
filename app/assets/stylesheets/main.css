@@ -52,3 +52,28 @@
   border-color: black;
   margin-top: 2%;
 }
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: right;
+}
+
+.footer p {
+  margin-right: 3%;
+}
+
+#about {
+  width: 70%;
+  background-color: #1ba3e5;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+.about-container {
+  height: 550px;
+}
+

@@ -1,6 +1,6 @@
 class SearchesController < ApplicationController
   def new
-    @search = Search.new
+    @search = SearchForm.new
   end
 
   def create
@@ -10,6 +10,6 @@ class SearchesController < ApplicationController
   private
 
   def search_params
-    params.require(:search).permit(:season, :episode, :keyword, :random)
+    params.require(:search_form).permit(:season, :episode, :keyword, :random)
   end
 end

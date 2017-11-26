@@ -10,6 +10,6 @@ class SearchesController < ApplicationController
   private
 
   def search_params
-    params.require(:search).permit(:season, :episode, :keyword)
+    params.require(:search).permit(:season, :episode, :keyword, :random)
   end
 end

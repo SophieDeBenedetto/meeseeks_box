@@ -15,7 +15,7 @@ class SceneQueryBuilder
   end
 
   def by_keyword
-    reflect(query.where(scene[:dialogue].matches("%#{search_object.keyword}%")))
+    reflect(query.where('dialogue ~* :word', word: "\s#{search_object.keyword}"))
   end
   
   private

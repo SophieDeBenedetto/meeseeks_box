@@ -11,6 +11,7 @@
   margin: 2%;
   height: 200px;
   padding-top: 30px;
+  margin-top: 1%;
 }
 
 .intro h1 {
@@ -54,14 +55,6 @@
   margin-bottom: 2%;
 }
 
-.footer {
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  text-align: right;
-}
-
 .footer p {
   margin-right: 3%;
 }
@@ -76,5 +69,30 @@
 
 .about-container {
   height: 550px;
+}
+
+.random-search {
+  margin-top: 1%;
+}
+
+#random {
+  background-color: #1ba3e5;
+  color: white;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: right;
 }
 

@@ -1,11 +1,17 @@
+<%= form_for @search, remote: true do |f|%>
+  <%= f.label :season %>
+  <%=f.text_field :season%> 
+  <%= f.label :episode %> 
+  <%=f.text_field :episode%>
+  <%= f.label :keyword %>
+  <%=f.text_field :keyword%>
 
-  <%= form_for @search, remote: true do |f|%>
-    <%= f.label :season %>
-    <%=f.text_field :season%> 
-    <%= f.label :episode %> 
-    <%=f.text_field :episode%>
-    <%= f.label :keyword %>
-    <%=f.text_field :keyword%>
+  <%=f.submit "can doooo!", id: 'submit'%>
+<% end %>
 
-    <%=f.submit "can doooo!", id: 'submit'%>
+<div class="offset-4 random-search">
+  <%= form_for @search, remote: true do |f| %>
+    <%= f.hidden_field :random, value: true %>
+    <%=f.submit "rickety-rickety-random!", id: 'random'%>
   <% end %>
+</div>

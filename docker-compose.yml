@@ -28,3 +28,5 @@ app:
     - "3000"
   tty: true
   stdin_open: true
+  environment:
+    RAILS_LOG_TO_STDOUT: "true"
